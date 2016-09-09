@@ -81,24 +81,30 @@
 		</div>
 	</nav>
 
-	<div class="container jumbotron">
+	<div class="container jumbotron" style="padding:50px">
 		<section>
 		<div class="col-sm-12">
-			<div class="col-md-4"><!-- Take up 3 coloumns out of 12 on the screen-->
+			<div class="col-md-1"></div>
+			<div class="col-md-5">
 				<form>
 				Enter Hashtag (e.g. lol) 	: 
 				<input type="text" name="hashtag" id="hash"><br>
 				</form>
 
-				  <button class="btn waves-effect waves-light" type="submit" id="action" onclick="doIt()">Submit
+
+			</div>
+			<div class="col-md-6" style="padding-left: 100px; padding-top: 15px;">
+					<button class="btn waves-effect waves-light" type="submit" id="action" onclick="doIt()">Submit
 				    <i class="material-icons right">send</i>
 				  </button><br>
 				<br>
 			</div>
 		</div>	
 
-		<div class="col-md-12">			
-			<div class="col-md-12" id="output"></div>			
+		<div class="col-md-12">	
+			<br>	
+			<div class="col-md-1"></div>	
+			<div class="col-md-11" id="output"></div>			
 		</div>	
 
 		</section>

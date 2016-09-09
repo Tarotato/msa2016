@@ -2,7 +2,7 @@
 	 var hashtag = (<HTMLInputElement>document.getElementById("hash")).value;
     //console.log("do it is " + hashtag);
 	if(hashtag == ""){
-		alert("Please enter a hashtag");
+		alert("Please enter a hashtag.");
 	}else{
 		var output = $.ajax({
 			url: 'https://tagdef.p.mashape.com/one.'+ hashtag +'.json',
@@ -17,7 +17,7 @@
 				//$("#output").before('<p>Defnition is: </p><br>');
 				document.getElementById("output").innerHTML = data.defs.def.text; 
 				},
-			error: function(err) { alert(err); },
+			error: function(err) { alert("Sorry, that hashtag is not defined."); },
 			beforeSend: function(xhr) {
 			xhr.setRequestHeader("X-Mashape-Authorization", "CashpxF8LsmshHOQd1kcByYvzs7xp1zWCMijsnEjStLeAxWsvE"); // Enter here your Mashape key
 			}

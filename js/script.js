@@ -1,6 +1,7 @@
 function doIt() {
     var hashtag = document.getElementById("hash").value;
-    console.log("do it is " + hashtag);
+
+    //console.log("do it is " + hashtag);
     var output = $.ajax({
         url: 'https://tagdef.p.mashape.com/one.' + hashtag + '.json',
         type: 'GET',
@@ -10,7 +11,8 @@ function doIt() {
             //Change data.source to data.something , where something is whichever part of the object you want returned.
             //To see the whole object you can output it to your browser console using:
             //console.log(data);
-            document.getElementById("output").innerHTML = 'Defnition: ' + data.defs.def.text;
+            //$("#output").before('<p>Defnition is: </p><br>');
+            document.getElementById("output").innerHTML = data.defs.def.text;
         },
         error: function (err) {
             alert(err);
@@ -20,3 +22,14 @@ function doIt() {
         }
     });
 }
+
+$(function () {
+    $("hash").keypress(function (e) {
+        if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+            $('button[type=submit] .default').click();
+            return false;
+        } else {
+            return true;
+        }
+    });
+});

@@ -1,18 +1,22 @@
 <style>
+    
+    .navbar-default .navbar-toggle:focus, 
+    .navbar-default .navbar-toggle:hover {
+        background-color: #f1f1f1;
+    }
 
     .navbar-default .navbar-brand{
-        color: #8EF9F4;    
+        color: #24ABA4;    
+    }
+
+    .navbar-default .navbar-brand:hover {
+        color: #49D6CE; 
     }
 
     .badge{
         background-color: #337ab7;
         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     }
-
-	.navbar-default .navbar-toggle:hover{
-	    border-color: #fff;
-	}
-
 
     .navbar-default, .panel .panel-default {
         background-color: #FFFBFA;
@@ -34,8 +38,4 @@
         border-radius: 4px;
     }
 
-    #text-event {
-        text-decoration: underline; 
-    }
-
-</style>
+    </style>

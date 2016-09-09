@@ -6,6 +6,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!--Favicon-->
+	<link href="./images/logo.png" rel="icon" type="image/png" style="height: 16px;" />
+	<title>Hashtag Definer - Home</title>
+
 	<!-- Following usings from  MaxCDN -->
 	<!-- Latest compiled and minified CSS-->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -30,7 +34,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 
 	<script src="./js/script.js"></script>
-	
+
 	<!-- 
 	To collect end-user usage analytics about your application, 
 	insert the following script into each page you want to track.
@@ -58,8 +62,8 @@
 		<div class="container">
 			<header>
 				<!-- Logo-->
-				<a class="navbar-brand" style="margin: 0px; padding-top: 1px;">
-					<img id="logo" alt="Brand" src="" style="height: 45px;">
+				<a class="navbar-brand" style="margin: 0px; padding-top: 5px;">
+					<img id="logo" alt="Brand" src="./images/logo.png" style="height: 45px;">
 				</a>
 				<a class="navbar-brand" href="./index.html">
 					<span style="font-family: 'Orbitron', sans-serif; font-size:22px; font-weight: 700;">Hashtag Definer</span>
@@ -79,18 +83,24 @@
 
 	<div class="container jumbotron">
 		<section>
-			<div class="col-xs-4"><!-- Take up 3 coloumns out of 12 on the screen-->
+		<div class="col-sm-12">
+			<div class="col-md-4"><!-- Take up 3 coloumns out of 12 on the screen-->
 				<form>
-				Enter Hashtag: <input type="text" name="hashtag" id="hash"><br>
-				<i class="fa fa-hashtag"></i>
+				Enter Hashtag Name: 
+				<input type="text" name="hashtag" id="hash"><br>
 				</form>
 
-				  <button class="btn waves-effect waves-light" type="submit" name="action" onclick="doIt()">Submit
+				  <button class="btn waves-effect waves-light" type="submit" id="action" onclick="doIt()">Submit
 				    <i class="material-icons right">send</i>
 				  </button><br>
-				<br>  	
-				<div id="output"></div>
+				<br>
 			</div>
+		</div>	
+
+		<div class="col-md-12">			
+			<div class="col-md-12" id="output"></div>			
+		</div>	
+
 		</section>
 
 </body>

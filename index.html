@@ -1,0 +1,79 @@
+	<!DOCTYPE html>
+<!-- Author: Isabel Zhuang -->
+<html lang=en>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Following usings from  MaxCDN -->
+	<!-- Latest compiled and minified CSS-->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<!-- FontAwesome Link-->
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+	<script src="./js/script.js"></script>
+
+  
+</head>
+
+<body>
+
+	<!-- Navigation bar-->
+	<nav class="navbar navbar-default navbar" style="margin-bottom: 0px">
+		<div class="container">
+			<header>
+				<!-- Logo-->
+				<a class="navbar-brand" style="margin: 0px; padding-top: 1px;">
+					<img id="logo" alt="Brand" src="" style="height: 45px;">
+				</a>
+				<a class="navbar-brand" href="./index.html">
+					<span style="font-family: 'Orbitron', sans-serif; font-size:22px; font-weight: 700;">Hashtag Definer</span>
+				</a>
+			</header>
+
+			<!-- Language Menu and Glyphicons-->
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+							</ul>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container jumbotron">
+		<section>
+			<div class="col-xs-4"><!-- Take up 3 coloumns out of 12 on the screen-->
+				<form>
+				Enter Hashtag: <input type="text" name="hashtag" id="hash"><br>
+				<i class="fa fa-hashtag"></i>
+				</form>
+
+				  <button class="btn waves-effect waves-light" type="submit" name="action" onclick="doIt()">Submit
+				    <i class="material-icons right">send</i>
+				  </button><br>
+				<br>  	
+				<div id="output"></div>
+			</div>
+		</section>
+
+</body>
